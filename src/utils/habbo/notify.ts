@@ -1,4 +1,4 @@
-import { ext } from "../../main.ts";
+import { ext } from "../../main";
 import { HPacket, HDirection } from "gnode-api";
 
 export function sendNotification(text: String, from?: String) {

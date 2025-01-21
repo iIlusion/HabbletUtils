@@ -1,1 +1,1 @@
-export * from './habbo/index.ts'
+export * from './habbo/index'

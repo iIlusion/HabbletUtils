@@ -6,13 +6,14 @@
   "type": "module",
   "scripts": {
     "test": "npx tsx src/main.ts -p 9092",
-    "start": "npx tsx src/main.ts"
+    "start": "npx tsx src/main.ts",
+    "tt": "tsc --version"
   },
   "license": "MIT",
   "author": "Lx",
   "dependencies": {
     "gnode-api": "^0.2.18",
     "tsx": "^4.16.5",
-    "typescript": "^5.5.4"
+    "typescript": "^5.7.3"
   }
 }

@@ -2,18 +2,8 @@ import { readFileSync, readdirSync, lstatSync } from 'fs'
 import { Extension, HEntity, HMessage } from 'gnode-api';
 import { ExtensionInfo } from 'gnode-api/lib/extension/extensioninfo';
 import { ExtensionState, initialState, initilizeExtension, setChatInitialized } from './functions/initialize';
-import { roomUsers } from './events/users';
-import { userObject, userObjectInterface } from './events/userObject';
-
-declare module 'gnode-api' {
-    interface Extension {
-        commands: Map<string, any>;
-        initialized: boolean
-        state: ExtensionState;
-        roomUsers: HEntity[];
-        userObject: userObjectInterface;
-    }
-}
+import { roomUsers } from './events/Users';
+import { userObject } from './events/UserObject';
 
 const extensionInfo: ExtensionInfo = JSON.parse(readFileSync('./package.json', 'utf8'));
 extensionInfo.name = "Habblet Utils";
